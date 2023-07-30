@@ -1,0 +1,83 @@
+
+
+.navbar {
+  background-color: rgb(14 165 233);
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  color: rgb(30 41 59);
+  height: 100px;
+  width: 100%;
+  padding: 1rem 0;
+  position: fixed;
+  top: 0;
+  }
+.logo {
+  font-style: italic;
+}
+.dprofile {
+  width: 50%;
+  display: block;
+}
+.profile{
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+.profile:hover{
+  color: red;
+}
+.iprofile {
+  position: relative;
+  display: inline-block;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .navbar {
+    background: wheat;
+  }
+  .logo {
+    color: red;
+    width: 50px;
+  }
+  .hsearch {
+      visibility: visible;
+  }
+  .navItems{
+    visibility: hidden;
+  }
+  .profile {
+    visibility: hidden;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .navItems{
+    visibility: hidden;
+  }
+  .profile {
+    visibility: hidden;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .navItems{
+    visibility: visible;
+  }
+  .profile {
+    visibility: visible;
+  }
+}
+
