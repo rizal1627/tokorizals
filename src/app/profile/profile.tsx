@@ -2,11 +2,13 @@
 
 import styles from './profile.module.css'
 import Layout from '../../../components/layout'
+import BottomNav from '../../../components/bottomnav/bottomnav'
 import Link from 'next/link'
 import { FaCircleArrowLeft, FaInfo, FaAngleRight, FaCopy } from 'react-icons/fa6'
 import { useState } from 'react'
 import Image from 'next/image'
 import profilePic from '../../assets/christopher.jpg'
+import Navbar from '../../../components/navbar/navbar'
 
 export default function Profile() {
   const [isHovered, setIsHovered] = useState(false);
@@ -20,7 +22,7 @@ export default function Profile() {
   };
   return (
     <>
-        <Layout>
+        <Navbar/>
         <section>
             <div className={styles.backhome}>
               <button>
@@ -140,7 +142,9 @@ export default function Profile() {
           </div>
           
         </section>
-        </Layout>
+        <BottomNav/>
+        {/* <Layout>
+        </Layout> */}
     </>
   )
 }

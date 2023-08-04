@@ -9,7 +9,7 @@ module.exports = {
   theme: {
     container: {
       padding: {
-        xsm: '2rem',
+        xsm: '1rem',
         sm: '2rem',
         md: '4rem',
         lg: '6rem',
