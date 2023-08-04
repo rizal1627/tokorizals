@@ -35,6 +35,8 @@
 @media only screen and (max-width: 600px) {
   .navbar {
     background: wheat;
+    visibility: hidden;
+    top: -100px;
   }
   .logo {
     color: red;
@@ -53,6 +55,9 @@
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
+  .navbar {
+    visibility: hidden;
+  }
   .navItems{
     visibility: hidden;
   }
@@ -63,12 +68,16 @@
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-  
+  .navbar {
+    visibility: hidden;
+  }
 } 
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-  
+  .navbar {
+    visibility: visible;
+  }
 } 
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */

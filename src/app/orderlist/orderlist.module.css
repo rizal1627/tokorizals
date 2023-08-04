@@ -11,12 +11,8 @@
         padding: 0px 32px;
         /* background-color: rgb(241 245 249); */
     }
-    .imagep {
-        border: 1px solid black;
-        box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-        border-radius: 50%;
-        height: 96px;
-        object-fit: cover;
+    .search {
+        color: red;
     }
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -31,13 +27,6 @@
         margin: 0px 0px 10px 0px;
         padding: 0px 64px;
     }
-    .imagep {
-        border: 1px solid black;
-        box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-        border-radius: 50%;
-        height: 96px;
-        object-fit: cover;
-    }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -50,13 +39,6 @@
         gap: 8px;
         margin: 0px 0px 20px 0px;
         padding: 0px 64px;
-    }
-    .imagep {
-        border: 1px solid black;
-        box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-        border-radius: 50%;
-        height: 96px;
-        object-fit: cover;
     }
 } 
 

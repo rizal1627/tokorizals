@@ -31,7 +31,7 @@ export default function Bottomnav() {
               </div>
               <p className='text-xs'>Profile</p>
             </Link>
-            <Link href={"./order-list"}>
+            <Link href={"./orderlist"}>
               <div className="grid place-items-center">
               <FaMoneyBillWave className={styles.bnicon}/>
               </div>

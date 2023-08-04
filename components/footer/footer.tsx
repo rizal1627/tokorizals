@@ -5,7 +5,7 @@ import Bottomnav from "../bottomnav/bottomnav"
 export default function Footer() {
     return (
       <>
-          <div className=" bg-slate-900 h-40 w-full">
+          <div className=" bg-slate-900 h-40 w-full xsm:invisible sm:invisible md:invisible lg:visible">
           <div className="text-slate-200 mx-20 py-5">
             <div className="grid grid-cols-2">
             <div className="">
