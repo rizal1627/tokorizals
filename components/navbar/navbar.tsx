@@ -5,6 +5,8 @@ import styles from './navbar.module.css'
 import Search from '../search/search'
 import { useState } from 'react';
 import Sidebar from '../sidebar/sidebar';
+import Image from 'next/image'
+import profilePic from '../../src/assets/christopher.jpg'
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -33,7 +35,14 @@ export default function Navbar() {
               </div>
               <div className={styles.dprofile}>
                 <div className={styles.profile} onMouseEnter={toggleDropdown} >
-                  <button className={styles.iprofile}></button>
+                  <button className={styles.iprofile}>
+                    <Image 
+                    src={profilePic}
+                    alt="Picture of the author"
+                    width={100}
+                    className={styles.imagep}
+                    />
+                  </button>
                   {isOpen && (
                     <Sidebar/>
                     )}

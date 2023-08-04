@@ -1,10 +1,10 @@
 'use client'
 
 import styles from './profile.module.css'
-import Layout from "../../../components/layout"
+import Layout from '../../../components/layout'
 import Link from 'next/link'
-import { FaCircleArrowLeft, FaInfo, FaAngleRight, FaCopy } from "react-icons/fa6";
-import { useState } from 'react';
+import { FaCircleArrowLeft, FaInfo, FaAngleRight, FaCopy } from 'react-icons/fa6'
+import { useState } from 'react'
 import Image from 'next/image'
 import profilePic from '../../assets/christopher.jpg'
 
