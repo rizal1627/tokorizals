@@ -6,6 +6,7 @@ import Search from '../search/search'
 import { useState } from 'react';
 import Sidebar from '../sidebar/sidebar';
 import Image from 'next/image'
+import logoPic from '../../src/assets/RSALogoShop.png'
 import profilePic from '../../src/assets/christopher.jpg'
 
 export default function Navbar() {
@@ -20,7 +21,14 @@ export default function Navbar() {
         <div className={styles.navbar}>
           <div className="grid xl:grid-cols-5 md:grid-cols-4 min-[320px]:grid-cols-3 min-[320px]:grid-row-0 py-2 text-base font-semibold justify-items-center">
               <div className={styles.logo}>
-                <Link href={"/"}>Toko Rizal</Link>
+                <Link href={"/"}>
+                  <Image
+                    src={logoPic}
+                    alt="rizal tokos"
+                    width={100}
+                    className={styles.imageLogo}
+                  />
+                </Link>
               </div>
               <div className="lg:col-span-2 md:col-span-2">
                   <div className={styles.hsearch}>

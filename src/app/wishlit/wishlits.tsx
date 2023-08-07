@@ -20,7 +20,8 @@ export default function Wishlit() {
                     </div>
                     <div className="xsm:basis-6/12 md:basis-9/6">Back</div>
                     <div className="xsm:basis-2/12 md:basis-1/6 grid place-content-center">
-                      <Link href={'./cart'}><span><FaCartShopping/></span>
+                      <Link href={'./cart'}>
+                        <span><FaCartShopping/></span>
                       </Link>
                     </div>
                     <div className="xsm:basis-2/12 md:basis-1/6 grid place-content-center">

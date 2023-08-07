@@ -7,12 +7,14 @@ import prodpictfash from '../../assets/headset.jpg'
 import prodpictbuku from '../../assets/chip.jpg'
 import styles from './product.module.css'
 import { FaCartShopping, FaHeart } from "react-icons/fa6"
+import Mnavbar from "../../../components/mobilenavbar/mnavbar"
 
 export default function Product() {
   return (
     <>
         <Layout>
           <section>
+            <Mnavbar/>
             <div className="container min-h-screen min-w-full">
               <div className="font-semibold text-center">
                 <h1>Product Page</h1>
