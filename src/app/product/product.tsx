@@ -6,7 +6,7 @@ import prodpictelek from '../../assets/kamera.jpg'
 import prodpictfash from '../../assets/headset.jpg'
 import prodpictbuku from '../../assets/chip.jpg'
 import styles from './product.module.css'
-import { FaCartShopping, FaHeart } from "react-icons/fa6"
+import { FaCartShopping, FaHeart, FaLocationDot } from "react-icons/fa6"
 import Mnavbar from "../../../components/mobilenavbar/mnavbar"
 
 export default function Product() {
@@ -30,16 +30,22 @@ export default function Product() {
                         <div className=" grid grid-rows-1 h-52">
                           <Link href={'./detailproduct'}>
                           <Image
-                            src={prodpictelek}
+                            src={prodpictfash}
                             alt="Picture of the author"
                             className={styles.imageproduct}
                           />
                           </Link>
                         </div>
-                        <div className="infoprod grid grid-rows-3 h-20 py-2">
+                        <div className="infoprod flex flex-col py-2">
                           <Link href={"./detailproduct"}>
-                            <div className="bestseller">badge best-seller</div>
+                            <div className="bestseller">Kamera DSLR Sony</div>
                             <div className="prodprice"> Rp. 20.000</div>
+                            <div className="shoplocation flex flex-row gap-1 items-center">
+                              <div className="badgeSL">
+                                <span><FaLocationDot/></span>
+                              </div>
+                              <div className="LocShop">Jakarta Barat</div>
+                            </div>
                             <div className="rating">Rating Seller</div>
                           </Link>
                         </div>
@@ -71,61 +77,73 @@ export default function Product() {
                           <div className=" grid grid-rows-1 h-52">
                             <Link href={'./detailproduct'}>
                             <Image
-                              src={prodpictfash}
+                              src={prodpictelek}
                               alt="Picture of the author"
                               className={styles.imageproduct}
                             />
                             </Link>
                           </div>
-                          <div className="infoprod grid grid-rows-3 h-20 py-2">
+                          <div className="infoprod flex flex-col py-2">
                             <Link href={"./detailproduct"}>
-                              <div className="bestseller">badge best-seller</div>
+                              <div className="bestseller">Kamera DSLR Sony</div>
                               <div className="prodprice"> Rp. 20.000</div>
+                              <div className="shoplocation flex flex-row gap-1 items-center">
+                                <div className="badgeSL">
+                                  <span><FaLocationDot/></span>
+                                </div>
+                                <div className="LocShop">Jakarta Barat</div>
+                              </div>
                               <div className="rating">Rating Seller</div>
                             </Link>
                           </div>
                           <div className="grid grid-cols-2 content-center gap-1 py-2">
-                            <div className="btn-atc">
-                              <button className="btnatc border border-slate-500 rounded shadow-lg px-2 h-10 w-full flex items-center justify-center gap-1">
-                                <span><FaCartShopping/></span>
-                                <span className="text-sm">Add To Cart</span>
+                              <div className="btn-atc">
+                                <button className="btnatc border border-slate-500 rounded shadow-lg px-2 h-10 w-full flex items-center justify-center gap-1">
+                                  <span><FaCartShopping/></span>
+                                  <span className="text-sm">Add To Cart</span>
+                                </button>
+                              </div>
+                              <div className="btnwishlit">
+                              <button className="btnwishlit border border-slate-500 rounded shadow-lg px-2 h-10 w-full flex items-center justify-center gap-1">
+                                  <span><FaHeart/></span>
+                                  <span className="text-sm">Add To Wishlit</span>
                               </button>
+                              </div>
                             </div>
-                            <div className="btnwishlit">
-                            <button className="btnwishlit border border-slate-500 rounded shadow-lg px-2 h-10 w-full flex items-center justify-center gap-1">
-                                <span><FaHeart/></span>
-                                <span className="text-sm">Add To Wishlit</span>
-                            </button>
-                            </div>
-                          </div>
                         </div>
                       </div>
-                  </div>
+                    </div>
                 </div>
                 <div className="category3">
                   <div className="py-5 font-semibold">
                     <h3>Buku Baca</h3>
                   </div>
                   <div className="listprod pb-10">
-                      <div className="border border-slate-300 w-72 h-96 p-2 rounded shadow-lg">
-                        <div className="flex flex-col h-full">
-                          <div className=" grid grid-rows-1 h-52">
-                            <Link href={'./detailproduct'}>
-                            <Image
-                              src={prodpictbuku}
-                              alt="Picture of the author"
-                              className={styles.imageproduct}
-                            />
-                            </Link>
-                          </div>
-                          <div className="infoprod grid grid-rows-3 h-20 py-2">
-                            <Link href={"./detailproduct"}>
-                              <div className="bestseller">badge best-seller</div>
-                              <div className="prodprice"> Rp. 20.000</div>
-                              <div className="rating">Rating Seller</div>
-                            </Link>
-                          </div>
-                          <div className="grid grid-cols-2 content-center gap-1 py-2">
+                    <div className="border border-slate-300 w-72 h-96 p-2 rounded shadow-lg">
+                      <div className="flex flex-col h-full">
+                        <div className=" grid grid-rows-1 h-52">
+                          <Link href={'./detailproduct'}>
+                          <Image
+                            src={prodpictbuku}
+                            alt="Picture of the author"
+                            className={styles.imageproduct}
+                          />
+                          </Link>
+                        </div>
+                        <div className="infoprod flex flex-col py-2">
+                          <Link href={"./detailproduct"}>
+                            <div className="bestseller">Kamera DSLR Sony</div>
+                            <div className="prodprice"> Rp. 20.000</div>
+                            <div className="shoplocation flex flex-row gap-1 items-center">
+                              <div className="badgeSL">
+                                <span><FaLocationDot/></span>
+                              </div>
+                              <div className="LocShop">Jakarta Barat</div>
+                            </div>
+                            <div className="rating">Rating Seller</div>
+                          </Link>
+                        </div>
+                        <div className="grid grid-cols-2 content-center gap-1 py-2">
                             <div className="btn-atc">
                               <button className="btnatc border border-slate-500 rounded shadow-lg px-2 h-10 w-full flex items-center justify-center gap-1">
                                 <span><FaCartShopping/></span>
@@ -139,8 +157,8 @@ export default function Product() {
                             </button>
                             </div>
                           </div>
-                        </div>
                       </div>
+                    </div>
                   </div>
                 </div>
               </div>

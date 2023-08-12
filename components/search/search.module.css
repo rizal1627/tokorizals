@@ -2,7 +2,7 @@
     /* border: solid 1px; */
     border-radius: 5px;
     padding: 20px 1rem;
-    width: 500px;
+    /* width: 500px; */
     height: 30px;
     font-weight: 400;
     left: 0;
@@ -21,8 +21,8 @@
   
   /* Medium devices (landscape tablets, 768px and up) */
   @media only screen and (min-width: 768px) {
-    .search input {
-        width: 300px;
+    .search input{
+        width: 100%;
     }
   } 
   
@@ -34,6 +34,6 @@
   /* Extra large devices (large laptops and desktops, 1200px and up) */
   @media only screen and (min-width: 1200px) {
     .search input {
-      width: 450px;
+      width: 100%;
   }
   }

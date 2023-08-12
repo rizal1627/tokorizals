@@ -19,8 +19,8 @@ export default function Navbar() {
   return (
     <>
         <div className={styles.navbar}>
-          <div className="grid xl:grid-cols-5 md:grid-cols-4 min-[320px]:grid-cols-3 min-[320px]:grid-row-0 py-2 text-base font-semibold justify-items-center">
-              <div className={styles.logo}>
+          <div className="flex xl:flex-row md:flex-row xsm:flex-row text-base font-semibold items-center">
+              <div className={`${styles.logo} lg:basis-1/12 md:basis-2/12`}>
                 <Link href={"/"}>
                   <Image
                     src={logoPic}
@@ -30,27 +30,25 @@ export default function Navbar() {
                   />
                 </Link>
               </div>
-              <div className="lg:col-span-2 md:col-span-2">
+              <div className={`lg:col-span-2 md:col-span-2 lg:basis-6/12 md:basis-8/12`}>
                   <div className={styles.hsearch}>
                     <Search />
                   </div>
               </div>
-              <div className={styles.navItems}>
+              <div className={`${styles.navItems} lg:basis-4/12 md:basis-1/12 flex justify-center`}>
                 <Link className='px-5' href={"/"}>Home</Link>
                 <Link className='px-5' href={"./product"}>Product</Link>
                 <Link className='px-5' href={"./wishlit"}>Wishlit</Link>
                 <Link className='px-5' href={"./cart"}>Cart</Link>
               </div>
-              <div className={styles.dprofile}>
+              <div className={`${styles.dprofile} lg:basis-1/12 md:basis-1/12`}>
                 <div className={styles.profile} onMouseEnter={toggleDropdown} >
-                  <button className={styles.iprofile}>
                     <Image 
                     src={profilePic}
                     alt="Picture of the author"
-                    width={100}
+                    // width={100}
                     className={styles.imagep}
                     />
-                  </button>
                   {isOpen && (
                     <Sidebar/>
                     )}

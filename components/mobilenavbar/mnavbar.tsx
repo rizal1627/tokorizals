@@ -10,7 +10,7 @@ export default function Mnavbar() {
     return(
         <>
             <div className={`${styles.mnavbar} bg-lime-300 fixed top-0 xsm:h-16 md:h-20 w-full`}>
-                <div className="flex flexrow items-center h-full">
+                <div className="flex flex-row items-center h-full">
                     <div className="basis-2/12">
                         <Link href={"/"}>
                             <Image
