@@ -26,8 +26,8 @@ export default function Cart() {
                   </div>
                 </div>
               </div>
-              <div className="min-h-screen min-w-full container xsm:top-0">
-                <div>content</div>
+              <div className="min-h-screen min-w-full container top-0 xsm:pt-20 lg:pt-2">
+                <div>Halaman Cart</div>
               </div>
           </section>
         </Layout>

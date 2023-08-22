@@ -11,15 +11,18 @@ import profilePic from '../../src/assets/christopher.jpg'
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-  const [isClosed, setIsClosed] = useState(false);
+  const [isClosed, setIsClosed] = useState(true);
   const toggleDropdown = () => {
     setIsOpen(!isOpen);
   };
+  // const toggleDropdownCLosed = () => {
+  //   setIsClosed(isClosed);
+  // };
   
   return (
     <>
         <div className={styles.navbar}>
-          <div className="flex xl:flex-row md:flex-row xsm:flex-row text-base font-semibold items-center">
+          <div className="flex flex-row text-base font-semibold items-center">
               <div className={`${styles.logo} lg:basis-1/12 md:basis-2/12`}>
                 <Link href={"/"}>
                   <Image
@@ -42,19 +45,17 @@ export default function Navbar() {
                 <Link className='px-5' href={"./cart"}>Cart</Link>
               </div>
               <div className={`${styles.dprofile} lg:basis-1/12 md:basis-1/12`}>
-                <div className={styles.profile} onMouseEnter={toggleDropdown} >
+                <div className={styles.profile} onMouseEnter={toggleDropdown}>
                     <Image 
                     src={profilePic}
                     alt="Picture of the author"
                     // width={100}
                     className={styles.imagep}
                     />
-                  {isOpen && (
-                    <Sidebar/>
-                    )}
                 </div>
-                  <div className="sideprofile">
-                  </div>
+                  {isOpen && (
+                    <Sidebar />
+                    )}
               </div>
           </div>
         </div>

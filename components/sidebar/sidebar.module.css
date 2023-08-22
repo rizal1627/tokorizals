@@ -1,15 +1,20 @@
 
 .sidebar {
-    position: relative;
-    top: 25px;
+    position: absolute;
+    display: relative;
+    background-color: #f9f9f9;
+    width: 15%;
+    right: 0;
+    margin-right: 10px;
+    z-index: 1;
 }
 .menuItems{
-    position: absolute;
-    background-color: rgb(180, 180, 180);
+    /* position: absolute; */
+    /* background-color: rgb(180, 180, 180); */
     border: solid 1px black;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    right: -150px;
-    width: 500px;
+    right: 100px;
+    width: 100%;
 }
 .menuItems li {
     color: black;

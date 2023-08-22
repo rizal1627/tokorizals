@@ -6,16 +6,16 @@
   color: rgb(30 41 59);
   height: 100px;
   width: 100%;
-  padding: 1rem 0;
+  /* padding: 1rem 0; */
   position: fixed;
   top: 0;
-  padding: 20px 4rem 20px 4rem;
+  padding: 20px 2rem 20px 2rem;
   }
-
+/* 
 .iprofile {
   position: relative;
   display: inline-block;
-}
+} */
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
@@ -55,16 +55,17 @@
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   .navbar {
-    visibility: visible;
+    visibility: hidden;
+    top: -100px;
   }
-  .navItems{
-    visibility: visible;
+  /* .navItems{
+    visibility: hidden;
   }
   .profile {
     visibility: visible;
   }
   .dprofile {
-    width: 50%;
+    width: 70%;
     display: block;
   }
   .imagep {
@@ -74,13 +75,14 @@
     border: 1px solid black;
     border-radius: 50%;
     object-fit: cover;
-  }
+  } */
 } 
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   .navbar {
     visibility: visible;
+    top: 0px;
   }
 } 
 
@@ -89,6 +91,10 @@
   .navbar {
     visibility: visible;
   }
+  .profile:hover{
+    display: block;
+    background-color: red;
+  }
   .navItems{
     visibility: visible;
   }
@@ -96,9 +102,11 @@
     visibility: visible;
   }
   .imagep {
+    display: flex;
     border: 1px solid black;
     box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
     border-radius: 50%;
+    width: 50px;
     height: 50px;
     object-fit: cover;
 }

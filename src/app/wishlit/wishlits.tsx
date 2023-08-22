@@ -30,7 +30,7 @@ export default function Wishlit() {
                   </div>
               </div>
             </div>
-            <div className="min-h-screen min-w-full container xsm:top-0">
+            <div className="min-h-screen min-w-full container xsm:top-0 xsm:pt-20 lg:pt-2">
               <div>content Wishlit</div>
             </div>
           </section>

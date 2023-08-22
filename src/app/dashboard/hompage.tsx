@@ -5,16 +5,17 @@ import Link from "next/link"
 
 import Image from 'next/image'
 import logoPic from '../../assets/RSALogoShop.png'
+import Search from "../../../components/search/search"
 
 export default function Home() {
   return (
     <>
         <Layout>
           <header>
-          <div className="min-h-max xsm:fixed xsm:w-full lg:invisible shadow-lg bg-white top-0">
+            <div className="min-h-max xsm:fixed xsm:w-full lg:invisible shadow-lg bg-white top-0">
               <div className={styles.backhome}>
                   <div className="flex flex-row">
-                    <div className="xsm:basis-2/12 md:basis-1/6">
+                    <div className="xsm:basis-2/12 md:basis-2/12">
                       <Link href={"/"}>
                         <Image
                           src={logoPic}
@@ -24,25 +25,28 @@ export default function Home() {
                         />
                       </Link>
                     </div>
-                    <div className="xsm:basis-6/12 md:basis-9/6 grid place-content-center">
+                    <div className="xsm:basis-6/12 md:basis-8/12">
                       {/* <button>
                         <Link href={'/'} className='block'>
                         <FaCircleArrowLeft className='w-5 h-5'/>
                         </Link>
                       </button> */}
+                        <Search />
+                      <div className="">
+                      </div>
                     </div>
-                    <div className="xsm:basis-2/12 md:basis-1/6 grid place-content-center">
+                    <div className="xsm:basis-2/12 md:basis-1/12 grid place-content-center">
                       <Link href={'./cart'}><span><FaCartShopping/></span>
                       </Link>
                     </div>
-                    <div className="xsm:basis-2/12 md:basis-1/6 grid place-content-center">
+                    <div className="xsm:basis-2/12 md:basis-1/12 grid place-content-center">
                       <span><FaBars/></span>
                     </div>
                   </div>
               </div>
             </div>
           </header>
-            <div className="min-h-screen min-w-full xsm:container md:container lg:container">
+            <div className="min-h-screen min-w-full xsm:container md:container lg:container xsm:pt-20 lg:pt-2">
               <div className="font-bold xsm:h-10">
                 <h1>Home Page</h1>
               </div>
