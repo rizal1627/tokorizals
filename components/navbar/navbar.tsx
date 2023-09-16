@@ -39,10 +39,10 @@ export default function Navbar() {
                   </div>
               </div>
               <div className={`${styles.navItems} lg:basis-4/12 md:basis-1/12 flex justify-center`}>
-                <Link className='px-5' href={"/"}>Home</Link>
-                <Link className='px-5' href={"./product"}>Product</Link>
-                <Link className='px-5' href={"./wishlit"}>Wishlit</Link>
-                <Link className='px-5' href={"./cart"}>Cart</Link>
+                <Link className='px-5 hover:text-blue-500' href={"/"}>Home</Link>
+                <Link className='px-5 hover:text-blue-500' href={"./product"}>Product</Link>
+                <Link className='px-5 hover:text-blue-500' href={"./wishlit"}>Wishlit</Link>
+                <Link className='px-5 hover:text-blue-500' href={"./cart"}>Cart</Link>
               </div>
               <div className={`${styles.dprofile} lg:basis-1/12 md:basis-1/12`}>
                 <div className={styles.profile} onMouseEnter={toggleDropdown}>

@@ -93,7 +93,7 @@
   }
   .profile:hover{
     display: block;
-    background-color: red;
+    background-color: #2dd4bf;
   }
   .navItems{
     visibility: visible;

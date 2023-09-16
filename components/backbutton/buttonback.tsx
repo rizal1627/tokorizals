@@ -1,6 +1,7 @@
+'use client'
 
-import Link from 'next/link'
-import styles from './backbutton.module.css'
+import Link from 'next/link';
+import styles from './buttonback.module.css';
 
 import { FaCircleArrowLeft} from 'react-icons/fa6'
 
@@ -9,7 +10,7 @@ export default function Buttonback() {
 
         <div className={styles.backhome}>
             <button>
-                <Link href={'/'} className='block'>
+                <Link href={'/'}>
                 <FaCircleArrowLeft className='w-5 h-5'/>
                 </Link>
             </button>

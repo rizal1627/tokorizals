@@ -7,7 +7,7 @@ import prodpictfash from '../../assets/headset.jpg'
 import prodpictbuku from '../../assets/chip.jpg'
 import styles from './product.module.css'
 import { FaCartShopping, FaHeart, FaLocationDot } from "react-icons/fa6"
-import Mnavbar from "../../../components/mobilenavbar/mnavbar"
+import Mnavbar from "../../../components/mobile/mobilenavbar/mnavbar"
 
 export default function Product() {
   return (

@@ -23,6 +23,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "components/layout.tsx", "components/layout.tsx", "src/app/product/product.tsx", "src/app/dashboard/dropdown.jsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "components/layout.tsx", "components/layout.tsx", "src/app/product/product.tsx", "src/app/dashboard/dropdown.jsx", "src/app/seller/page.js", "src/app/dashboard/erorr.js"],
   "exclude": ["node_modules"]
 }

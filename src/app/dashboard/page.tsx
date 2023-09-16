@@ -1,4 +1,5 @@
 import Homepage from './hompage'
+import Eror from './erorr'
 import { Metadata } from 'next'
  
 export const metadata: Metadata = {
@@ -8,6 +9,8 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return (
-    <Homepage />
+    <>
+      <Homepage />
+    </>
   )
 }
