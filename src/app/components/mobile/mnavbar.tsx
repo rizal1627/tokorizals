@@ -16,9 +16,9 @@ export default function Mnavbar() {
     }
     return(
         <>
-            <div className={`${styles.mnavbar} bg-lime-300 fixed top-0 xsm:h-16 md:h-20 w-full`}>
+            <div className={`${styles.mnavbar} bg-green-400 fixed top-0 xsm:h-16 md:h-20 w-full`}>
                 <div className="flex flex-row items-center h-full">
-                    <div className="basis-2/12">
+                    <div className="Logo basis-3/12">
                         <Link href={"/"}>
                             <Image
                             src={logoPic}
@@ -28,30 +28,27 @@ export default function Mnavbar() {
                             />
                         </Link>
                     </div>
-                    <div className="basis-8/12">
+                    <div className="basis-6/12">
                         <h1>Search</h1>
                     </div>
-                    <div className="basis-1/12">
-                            {/* {children} */}
+                    <div className="basis-3/12 flex flex-row justify-between px-4">
                         <Link href={'./wishlit'}>
                             <span><FaHeart/></span>
                         </Link>
-                    </div>
-                    <div className="basis-1/12">
                         <Link href={'./cart'}>
                             <span><FaCartShopping/></span>
                         </Link>
-                    </div>
-                    <div className="basis-1/12">
                         <FaBars onClick={ToggleSidebar}/>
                     </div>
                 </div>
             </div>
             <div className={`${styles.sidebar} ${isOpen == true ? `${styles.active}` : ''}`}>
-                <div className={`${styles.sdheader}`}>
+                <div className="flex flex-row items-center justify-between p-4">
+                    <div>
                     <h1 className={`text-md font-bold`}>Menu Utama</h1>
-                    <div className={`bg-slate-700 rounded-xl text-slate-100 p-2`} onClick={ToggleSidebar}>
-                        <i className="fa fa-times">Close</i>
+                    </div>
+                    <div className={`text-slate-500 px-2`} onClick={ToggleSidebar}>
+                        X
                     </div>
                 </div>
                 <div className={`${styles.sdbody}`}>
@@ -67,7 +64,7 @@ export default function Mnavbar() {
                     </ul>
                 </div>
             </div>
-            <div className={`${styles.sidebaroverlay} ${isOpen == true ? 'active' : ''}`} onClick={ToggleSidebar}></div>
+            <div className={`${styles.sidebaroverlay} ${isOpen == true ? `${styles.active}` : ''}`} onClick={ToggleSidebar}></div>
         </>
     )
 }
