@@ -1,3 +1,5 @@
+'use client'
+
 import Layout from "../../../components/layout"
 import styles from './cart.module.css'
 import { FaCircleArrowLeft, FaHeart, FaBars } from "react-icons/fa6"
@@ -5,38 +7,45 @@ import { FaCircleArrowLeft, FaHeart, FaBars } from "react-icons/fa6"
 import Link from 'next/link'
 import Mnavbar from "../components/mobile/mnavbar"
 import Bottomnav from "../../../components/bottomnav/bottomnav"
+import { useState } from 'react'
+// import Button from "../components/button/button"
 
 
 export default function Cart() {
+
+  const [count, setCount] = useState(0);
+  const increment = () => {
+    setCount((c) => c + 1);
+  };
+  const decrement = () => {
+    if(count <= 0) {
+      alert('minimal 1 item')
+    } else {
+      setCount((c) => c - 1);
+    }
+  };
   return (
     <>
         <Layout>
-          <section>
             <Mnavbar/>
-            {/* <Link href={'./wishlit'}><span><h1>Shearch</h1></span></Link> */}
-            {/* <Link href={'./wishlit'}><span><FaHeart/></span></Link> */}
-            {/* </Mnavbar> */}
-              <div className="min-h-max xsm:fixed xsm:w-full lg:invisible shadow-lg bg-white top-0">
-              {/* <div className={styles.backhome}>
-                  <div className="flex flex-row">
-                    <div className="xsm:basis-2/12 md:basis-1/6 grid place-content-center">
-                      <button>
-                        <Link href={'/'} className='block'>
-                        <FaCircleArrowLeft className='w-5 h-5'/>
-                        </Link>
-                      </button>
-                    </div>
-                    <div className="xsm:basis-6/12 md:basis-9/6">Back</div>
-                    <div className="xsm:basis-2/12 md:basis-1/6 grid place-content-center"><Link href={'./wishlit'}><span><FaHeart/></span></Link></div>
-                    <div className="xsm:basis-2/12 md:basis-1/6 grid place-content-center"><span><FaBars/></span></div>
-                  </div>
-              </div> */}
-              </div>
+            <section>
               <div className="min-h-screen min-w-full container top-0 xsm:pt-20 lg:pt-2">
-                <div>Halaman Cart</div>
+                <div className="lg:container">Keranjang Belanja</div>
+                <div className="flex flex-row gap-5 ">
+                  <div className="border border-slate-900 rounded p-2">
+                  <button onClick={increment}>Tambah</button>
+                  </div>
+                    
+                  <div className="font-bold flex justify-center items-center">
+                  <span>Total Belanja : {count}</span>
+                  </div>
+                  <div className="border border-slate-900 rounded p-2">
+                  <button onClick={decrement}>Kurang</button>
+                  </div>
+                </div>
               </div>
+            </section>
             <Bottomnav/>
-          </section>
         </Layout>
     </>
   )
